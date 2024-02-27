@@ -1,0 +1,17 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+  name: jhola-product-microservice
+  labels:
+    key1: jhola-prodcut-microservice
+
+spec:
+  containers:
+    - name: jhola-product-microservice
+      image: qtechlabstacs/jhola-product-microservice:1.0
+  restartPolicy:
+    Always
+
+    # Always, OnFailure, Never
